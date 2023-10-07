@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="project">It's Bigger Project</h1>   
+    <h1 id ="valOne">23</h1>
+    <h1 id ="valTwo">22</h1>
+    <h2>Result = <spann id= "valResult" ></spann> </h2>
+
+<!-- getElementsByTag -->
+
+    <h5>T5 Project</h5> 
+    <h5>T5 Project</h5> 
+    <h5>T5 Project</h5> 
+    <h5>T5 Project</h5> 
+
+<!-- getElemenstByTag -->
+
+<!-- getElementsByTag -->
+
+<h3 class="one">Get Element By Class</h3> 
+<h3 class="one" >Get Element By Class</h3> 
+<h3 class="one" >Get Element By Class</h3> 
+<h3 class="one">Get Element By Class</h3> 
+<h3 class="one">Get Element By Class</h3> 
+
+<!-- getElemenstByTag -->
+
+<!-- querySelector -->
+
+<p>Only Query Selector</p>
+<p class="on">This is Query Selector Ref Class</p>  
+<p id="two">This is Query Selector Ref Id</p> 
+
+<!-- querySelector -->
+
+<!-- querySelectorAll -->
+
+<h4>Example Query Selector All</h4>  
+<p class="selectorall">Query Selector All</p>  
+<p class="selectorall">Query Selector All</p> 
+
+<!-- querySelectorAll -->
+    <script>
+
+        var project = document.getElementById("project").innerHTML="No It is Small Project"
+        var valOne = document.getElementById("valOne").innerHTML
+        var newValOne = parseInt(valOne)
+        var valTwo = document.getElementById("valTwo").innerHTML
+        var newValTwo = parseInt(valTwo)
+
+        var valResult = newValOne + newValTwo;
+        document.getElementById("valResult").innerHTML = valResult
+
+        //getElementsByTagName
+        document.getElementsByTagName("h5")[0].innerHTML="Replace Project"
+        document.getElementsByTagName("h5")[2].innerHTML="Another Project"
+
+        //getElementsByTagName
+        document.getElementsByClassName("one")[1].innerHTML="Replace Class Project"
+        document.getElementsByClassName("one")[2].innerHTML="Replace Class Project"
+
+        //querySelector
+        document.querySelector("p").innerHTML="Replaced Query Selector"
+        document.querySelector(".on").innerHTML="Class Replaced"
+        document.querySelector("#two").innerHTML="Id Replaced"
+
+        //querySelectorAll
+        document.querySelectorAll(".selectorall")[0].innerHTML="Replaced Query Selector All"
+        document.querySelectorAll(".selectorall")[1].innerHTML="Replaced Query Selector All"
+      
+
+
+    </script>
+</body>
+</html>
